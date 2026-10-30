@@ -3,7 +3,7 @@ const A='/assets/';
 const projects=[
 {title:'SheShield',type:'Safety & Privacy',img:null,gradient:'rose',desc:'A privacy-conscious safety experience with discreet access and mobile-first workflows.',tags:['PWA','Web App','Safety'],link:'https://shesheild-new.web.app',featured:true},
 {title:'EduBridge',type:'Education Technology',img:'edubridge.webp',desc:'A learning platform concept designed to make study materials and lessons more accessible.',tags:['Education','Web','UI/UX'],featured:true},
-{title:'Genetic Bloom Farm',type:'E-commerce & PWA',img:'farm-award.webp',desc:'A farm storefront project with inventory management, an admin experience and installable PWA.',tags:['Next.js','Supabase','PWA'],featured:true},
+{title:'Genetic Bloom Farm',type:'E-commerce & PWA',img:'farm-award.webp',desc:'A farm storefront project with inventory management, an admin experience and installable PWA.',tags:['Next.js','Supabase','PWA'],link:'https://genetic-bloom-farm.netlify.app/', featured:true},
 {title:'SafeCount AI',type:'Computer Vision',img:'ai-detection.webp',desc:'A privacy-preserving people-counting prototype built around real-time occupancy analytics.',tags:['Python','FastAPI','YOLO']},
 {title:'AI Assistance App',type:'AI & Web',img:'assistant.webp',desc:'An interactive AI-assisted experience exploring practical digital support tools.',tags:['JavaScript','AI','Web']},
 {title:'Project 01 — Web Application',type:'Live project',img:null,gradient:'blue',desc:'Explore this deployed web project. Full project description coming soon.',tags:['Live Demo'],link:'https://serene-tanuki-10f979.netlify.app/'},
