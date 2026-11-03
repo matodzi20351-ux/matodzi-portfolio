@@ -8,7 +8,13 @@ export async function handler(event){
  try{
   if(event.httpMethod==='GET'){
    const r=await fetch(base+'?select=id&limit=1',{headers:{...headers,Prefer:'count=exact'}});
-   if(!r.ok)throw Error('Unable to read likes');
+   if (!r.ok) {
+  console.error('Supabase read failed:', {
+    status: r.status,
+    statusText: r.statusText
+  });
+  throw Error('Unable to read likes');
+}
    const range=r.headers.get('content-range')||'';return json(200,{count:Number(range.split('/')[1])||0});
   }
   if(event.httpMethod!=='POST')return json(405,{error:'Method not allowed'});
